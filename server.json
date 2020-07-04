@@ -1,0 +1,44 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Ao molho",
+      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "price": "19.90",
+      "available": false,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
+    },
+    {
+      "id": 2,
+      "name": "Veggie",
+      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
+      "price": "21.90",
+      "available": false,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
+    },
+    {
+      "id": 3,
+      "name": "A la Camarón",
+      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "price": "25.90",
+      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe5vt3jWZRgScflTtB_gbEHsug_Rn4vynOBg&usqp=CAU",
+      "name": "Parmigiana Special",
+      "price": "29.90",
+      "description": "A melhor Parmigiana do mundo!",
+      "available": true,
+      "id": 4
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7MG8yHYS45SIOL4sgIAB75yQByQghmLChlg&usqp=CAU",
+      "name": "Parmigiana de Courgetes",
+      "price": "21.90",
+      "description": "Aquela parmigiana italiana raiz!",
+      "available": true,
+      "id": 5
+    }
+  ]
+}
