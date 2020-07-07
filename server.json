@@ -9,14 +9,6 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
     },
     {
-      "id": 2,
-      "name": "Veggie",
-      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
-      "available": false,
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
-    },
-    {
       "id": 3,
       "name": "A la Camarón",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
@@ -39,6 +31,14 @@
       "description": "Aquela parmigiana italiana raiz!",
       "available": true,
       "id": 5
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQshQq31h50H3jatFW_zlArzB3LKLvTwYw2CQ&usqp=CAU",
+      "name": "Pasta al aglio i olio",
+      "price": "15.50",
+      "description": "Pasta al aglio i olio. ",
+      "available": true,
+      "id": 6
     }
   ]
 }
