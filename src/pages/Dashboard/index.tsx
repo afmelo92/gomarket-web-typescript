@@ -76,10 +76,12 @@ const Dashboard: React.FC = () => {
   }
 
   async function handleDeleteFood(id: number): Promise<void> {
-    try {
+    const indexFood = foods.findIndex(foodItem => foodItem.id === id);
+    if (indexFood >= 0) {
       await api.delete(`/foods/${id}`);
-    } catch (err) {
-      console.log(err);
+
+      const newFoods = foods.filter(foodPlate => foodPlate.id !== id);
+      setFoods(newFoods);
     }
   }
 
