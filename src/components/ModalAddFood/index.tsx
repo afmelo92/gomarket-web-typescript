@@ -39,29 +39,9 @@ const ModalAddFood: React.FC<IModalProps> = ({
 
   const handleSubmit = useCallback(
     async (data: ICreateFoodData) => {
-      try {
-        formRef.current?.setErrors({});
-
-        const schema = Yup.object().shape({
-          image: Yup.string().required('Imagem obrigatória'),
-          name: Yup.string().required('Nome obrigatório'),
-          price: Yup.number().required(),
-          description: Yup.string().required('Descrição obrigatória'),
-        });
-
-        await schema.validate(data, {
-          abortEarly: false,
-        });
-
-        handleAddFood(data);
-        setIsOpen();
-      } catch (err) {
-        if (err instanceof Yup.ValidationError) {
-          formRef.current?.setErrors(err);
-        }
-      }
+      handleAddFood(data);
+      setIsOpen();
     },
-
     [handleAddFood, setIsOpen],
   );
 

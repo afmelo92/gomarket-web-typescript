@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
-import api from '../../services/api';
 
 import { Container } from './styles';
 
@@ -17,12 +16,14 @@ interface IProps {
   food: IFoodPlate;
   handleDelete: (id: number) => {};
   handleEditFood: (food: IFoodPlate) => void;
+  openEditModal: () => void;
 }
 
 const Food: React.FC<IProps> = ({
   food,
   handleDelete,
   handleEditFood,
+  openEditModal,
 }: IProps) => {
   const [isAvailable, setIsAvailable] = useState(food.available);
 
@@ -31,7 +32,8 @@ const Food: React.FC<IProps> = ({
   }
 
   function setEditingFood(): void {
-    // TODO - SET THE ID OF THE CURRENT ITEM TO THE EDITING FOOD AND OPEN MODAL
+    handleEditFood(food);
+    openEditModal();
   }
 
   return (
